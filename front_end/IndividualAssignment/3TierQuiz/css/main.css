@@ -1,0 +1,41 @@
+
+body {
+    background-color: #343a40;
+    display: block;
+    text-align: center;
+    padding: 3em;
+}
+
+@keyframes home {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -25px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+#title {
+    margin: 0.5em;
+    animation: home 1.5s ease-in-out forwards;
+    font-size: 2.5em;
+    color: whitesmoke;
+}
+
+#description-container {
+    margin-right: 15%;
+    margin-left: 15%;
+    color: whitesmoke;
+}
+
+.jumbotron {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 32px;
+}
+
+hr {
+    background-color: #7c7b84;
+}

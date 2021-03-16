@@ -1,0 +1,98 @@
+.card {
+    min-width: 60%;
+    text-align: left;
+    padding: 1.5em;
+
+}
+
+#questions-container {
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.question-input {
+    margin-bottom: 1em;
+}
+
+#question-template {
+    display: none;
+}
+
+.button-container {
+   position: relative;
+   margin-bottom: 2em;
+}
+
+#saved-message {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    visibility: hidden;
+}
+
+@-webkit-keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {top: 10px; opacity: 1;}
+    }
+    @keyframes fadein {
+        from {top: 0; opacity: 0;}
+        to {top: 10px; opacity: 1;}
+    }
+    @-webkit-keyframes fadeout {
+        from {top: 10px; opacity: 1;}
+        to {top: 0; opacity: 0;}
+    }
+    @keyframes fadeout {
+        from {top: 10px; opacity: 1;}
+        to {top: 0; opacity: 0;}
+    }
+
+#saved-message.show {
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+   However, delay the fade out process for 2.5 seconds */
+   -webkit-animation: fadein 0.5s, fadeout 0.5s 1.5s;
+    animation: fadein 0.5s, fadeout 0.5s 1.5s;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.blue {
+    color: rgb(6, 150, 233);
+}
+
+.add-mc-button {
+    font-weight: bold;
+    border-color:#007BFF;
+    border-width: 2px;
+    border-radius: 8px;
+    background-color: rgba(0,123,255, 0.1);
+    margin-right: 5px;
+    padding-bottom: 5px;
+    width: 2em;
+}
+
+.delete-mc-button {
+    font-weight: bold;
+    border-color:#757575;
+    border-width: 2px;
+    border-radius: 8px;
+    margin-right: 5px;
+    padding-bottom: 5px;
+    width: 2em;
+}
+
+.update-button {
+    float: right;
+}
+
+.delete-button {
+    float: right;
+    margin-left: 0.25em;
+}

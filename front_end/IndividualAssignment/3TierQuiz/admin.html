@@ -1,0 +1,170 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Quiz Admin</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/admin.css">
+
+  <script src="js/admin_v2.js"></script>
+
+</head>
+
+<body>
+  <div id="saved-message" class="alert alert-success" role="alert">
+    <span>&#10004; Question Added</span>
+  </div>
+
+  <div id="header">
+    <h3 id="title" class="display-4">Admin Mode</h3>
+    <div id="description-container">
+      <div class="jumbotron bg-dark text-white">
+        <p class="lead">Add, delete, or modify quiz questions.</p>
+        <hr class="my-4">
+        <p>The <i class="green">add</i> button will add a question only if it is complete with the correct answer selected.</p>
+        <p>The <i class="blue">Update</i> button will update the question in the database. The button will only be able to be used if the question has previously been added to the database.</p>
+        <p>The <i class="red">delete</i> button is disabled at this time (not a requirement).</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="question-template">
+    <div class="card bg-light mb-3 question">
+      <div class="card-body">
+        <h5 class="card-title">Question</h5>
+        <div class="card-text">
+
+          <textarea class="form-control question-input" name="question" rows="5" autofocus></textarea>
+
+          <div id="options-container" class="answers-container">
+            <div id="option-input" class="input-group mb-3">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <div class="radio">
+                    <input class="radio-values" type="radio" name="optradioq" value=0>
+                  </div>
+                </div>
+              </div>
+              <input type="text" class="form-control options" aria-label="Text input with checkbox">
+            </div>
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <div class="radio">
+                    <input class="radio-values" type="radio" name="optradioq" value=1>
+                  </div>
+                </div>
+              </div>
+              <input type="text" class="form-control options" aria-label="Text input with checkbox">
+            </div>
+  
+
+            <!-- <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <div class="radio">
+                    <input class="radio-values" type="radio" name="optradio" value="2">
+                  </div>
+                </div>
+              </div>
+              <input type="text" class="form-control options" aria-label="Text input with checkbox">
+            </div>
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <div class="radio">
+                    <input class="radio-values" type="radio" name="optradio" value="3">
+                  </div>
+                </div>
+              </div>
+              <input type="text" class="form-control options" aria-label="Text input with checkbox">
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="questions-container">
+
+
+  </div>
+    <!-- <div id="q1" class="card bg-light mb-3 question">
+      <div class="card-body">
+        <h5 class="card-title">Question 1</h5>
+        <div class="card-text">
+
+          <textarea id="qi1" class="form-control question-input" name="question" rows="5" autofocus></textarea>
+
+          <div class="answers-container">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <div class="radio">
+                    <input class="radio-values" type="radio" name="optradio1" value="0">
+                  </div>
+                </div>
+              </div>
+              <input type="text" class="form-control options" aria-label="Text input with checkbox">
+            </div>
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <div class="radio">
+                    <input class="radio-values" type="radio" name="optradio1" value="1">
+                  </div>
+                </div>
+              </div>
+              <input type="text" class="form-control options" aria-label="Text input with checkbox">
+            </div>
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <div class="radio">
+                    <input class="radio-values" type="radio" name="optradio1" value="2">
+                  </div>
+                </div>
+              </div>
+              <input type="text" class="form-control options" aria-label="Text input with checkbox">
+            </div>
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <div class="radio">
+                    <input class="radio-values" type="radio" name="optradio1" value="3">
+                  </div>
+                </div>
+              </div>
+              <input type="text" class="form-control options" aria-label="Text input with checkbox">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  <!-- </div> -->
+
+  <div class="button-container">
+    <button type="button" id="add-btn" class="btn btn-success">Add</button>
+  </div>
+  <!-- <div>
+    <button type="button" id="save-btn" class="btn btn-primary">Save Changes</button>
+  </div> -->
+  <hr />
+
+  <a href="index.html" class="btn btn-info btn-lg btn-back" role="button">Back</a>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+.button-container {
+    position: relative;
+    margin-bottom: 2em;
+ }
+
+ #questions-container {
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.card {
+    min-width: 60%;
+    text-align: left;
+    padding: 1.5em;
+
+}
+
+.form-check {
+    display: none;
+}
+
+.question-text {
+    white-space: pre-wrap;
+}
+
+#question-template {
+    display: none;
+}
+
+#submit-quiz-btn {
+    display: none;
+}
+
+#user-mark-container {
+    display: none;
+}
+
+.answer {
+    margin-left: 0.5em;
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: rgb(6, 150, 233);
+}

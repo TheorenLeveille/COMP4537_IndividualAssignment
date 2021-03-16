@@ -1,0 +1,83 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Quiz Student</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/student.css">
+
+    <script src="js/student_v2.js"></script>
+
+</head>
+
+<body>
+
+    <div id="header">
+        <h3 id="title" class="display-4">Student Mode</h3>
+        <div id="description-container">
+            <div class="jumbotron bg-dark text-white">
+                <div class="button-container">
+                    <button type="button" id="start-quiz-btn" class="btn btn-primary">Start Quiz</button>
+                </div>
+                <hr class="my-4">
+                <p>Press the <i class="blue">Start Quiz</i> button to begin the quiz, and the <i class="blue">Submit Quiz</i> to see your results once completed.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="questions-container">
+        <div class="card-deck">
+            <div id="question-template" class="card bg-light mb-3">
+                <div class="card-body">
+                    <div class="card-text">
+                        <h5 class="card-title">Question</h5>
+                        <p class="question-text">
+                            Question Text Unavailable
+                        </p>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q1" id="q1a" value="0">
+                        <label class="form-check-label" for="q1a">A)</label>
+                        <span class="answer"></span>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q1" id="q1b" value="1">
+                        <label class="form-check-label" for="q1b">B)</label>
+                        <span class="answer"></span>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q1" id="q1c" value="2">
+                        <label class="form-check-label" for="q1c">C)</label>
+                        <span class="answer"></span>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q1" id="q1d" value="3">
+                        <label class="form-check-label" for="q1d">D)</label>
+                        <span class="answer"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <button type="button" id="submit-quiz-btn" class="btn btn-primary">Submit Quiz</button>
+    </div>
+
+    <div id="user-mark-container" class="alert alert-info" role="alert">
+        User Grade
+    </div>
+
+    <hr/>
+
+    <a href="index.html" class="btn btn-info btn-lg btn-back" role="button">Back</a>
+
+
+</body>
+
+</html>
